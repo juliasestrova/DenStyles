@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
 
 /* BACKGROUND */
 
@@ -28,11 +28,12 @@ body {
 /* TOPBAR ("Welcome back, ___") */
 
 .topbar {
-  background: rgb(47, 26, 79);
-  border: none;
-  border-top: none;
-  color: #000000;
-  border-radius: 5px;
+  background: rgb(6 59 53);
+  border: dashed darkcyan;
+  color: #acc4b7;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 /* NAVBAR (Den/Crossroads/Etc.) */
@@ -47,15 +48,15 @@ body {
 /* NAVBAR BUTTON TEXT COLOR */
 
 .navbar li a {
-  color: #000000 !important;
+  color: #acc4b7 !important;
 }
 
 /* NAVBAR BUTTON HOVER */
 
 .navbar li a:hover {
-  background: rgba(1, 1, 1, 0.5) !important;
+  background: rgba(6, 59, 53, 0.5) !important;
   border-bottom: none;
-  color: #000000 !important;
+  color: #709e8e;
   border-radius: 5px;
 }
 
@@ -526,7 +527,9 @@ table#player img {
 /* LIODEN LOGO REPLACER */
 
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-  content: url("https://static.lioden.com/images/beetles/mesotopusregius/female/left/albino.png");
+  content: url(https://www.lioden.com/images/items/Other/app_foresh_khnum.png);
+  width: 120px;
+  height: auto;
 }
 
 /* CAVE / MOUND IMAGES */

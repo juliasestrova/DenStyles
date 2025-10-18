@@ -527,7 +527,7 @@ table#player img {
 /* LIODEN LOGO REPLACER */
 
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-  content: url(https://www.lioden.com/images/items/Other/app_foresh_khnum.png);
+  content: url('https://www.lioden.com/images/items/Other/app_foresh_khnum.png');
   width: 120px;
   height: auto;
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kavivanar&display=swap');
 :root {
   --main-font: "Kavivanar", sans-serif;
-  --color-1: #442E1E;
+  --color-1: rgba(68, 46, 30, 0.5);
   --color-2: #f4bf8a; 
   --color-3: #765032;
   --color-4: #CA8D51;
@@ -15,13 +15,14 @@ body {
   background-size: 100%;
   font: var(--main-font);
   color: var(--color-1);
+  font-size: large;
 }
 
 /* MAIN PANEL */
 
 /* RIGHT SIDE */
 .container.main {
-  background: rgb(100 46 51 / 50%);
+  background: var(--color-1);
   border: double var(--color-5);
   box-shadow: none;
   border-radius: 5px;
@@ -77,22 +78,22 @@ body {
 /* BREADCRUMB (Home / Den) */
 
 .breadcrumb {
-  background: rgba(1, 1, 1, 0.5) !important;
+  background: var(--color-5) !important;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* BREADCRUMB TEXT */
 
 .breadcrumb .active {
-  color: #000000;
+  color: var(--color-2);
 }
 
 /* CSS CREDIT */
 
 .breadcrumb::after {
   content: "Template by Katie (#106445)";
-  color: #d38cac;
+  color: var(--color-2);
   position: absolute;
   right: 13%; /* (This may need adjusting) */
   z-index: 100;
@@ -120,10 +121,10 @@ body {
 
 input.floatright,
 input.floatright:hover {
-  background: rgba(1, 1, 1, 0.5) !important;
+  background: var(--color-1) !important;
   border: none !important;
-  border-radius: 1px;
-  color: #000000 !important;
+  border-radius: 10px;
+  color: var(--color-4) !important;
 }
 
 /* SWITCH ACCOUNT BUTTON */
@@ -142,25 +143,64 @@ button.button:hover {
 .alert,
 .alert-warning,
 .alert-danger {
-  background: rgba(1, 1, 1, 0.5) !important;
-  border: none;
-  color: #000000;
-  border-radius: 0px !important;
+  background: rgb(48 29 14 / 80%) !important;
+  border: solid 1px var(--color-2);
+  color: var(--color-4);
+  border-radius: 19px !important;
 }
 
+
+
+/*COMMENT BOX*/
+#commentBox {
+  border: 2px solid var(--color-5);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  height: 300px;
+  overflow: auto;
+}
+
+.text-muted {
+  color: var(--color-5);
+}
+
+.commentTag {
+  width: 50px;
+  height: 50px;
+  border: solid 1px var(--color-1);
+  border-radius: 5px;
+}
+
+input, select, textarea {
+  background: var(--color-3) !important;
+  border: none !important;
+  border-radius: 5px !important;
+  color: var(--color-2) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+input #comment {
+  color: var(--color-2);
+}
+
+input{
+  border: 1px solid var(--color-5);
+}
 /* BIGGEST HEADER ("___"'s DEN) */
 
 h1 {
-  color: #000000;
+  color: var(--color-2);
   font-size: 90px;
   text-align: center;
-  font-family: "Amatic SC", sans-serif;
+  font-family: var(--main-font) cursive;
 }
 
 /* MEDIUM HEADER */
 
 h2 {
-  color: #000000;
+  color: var(--color-2);
   font-size: 24px;
   text-align: center;
 }
@@ -168,14 +208,18 @@ h2 {
 /* SMALL HEADER */
 
 h3 {
-  color: #000000 !important;
+  color: var(--color-2);
   font-size: 14px !important;
+}
+
+.b{
+  color: var(--color-3);
 }
 
 /* RIGHT SIDE PANEL HEADER */
 
 .sidebar h3 {
-  color: #000000 !important;
+  color: var(--color-2); !important;
   font-size: 26px !important;
   font-family: "Amatic SC", sans-serif;
 }
@@ -247,10 +291,18 @@ button#label_currentChannel /* Channel Button ie. Main, Sales */ {
 /* PANEL BACKGROUND COLOR */
 
 .table {
-  background: rgba(1, 1, 1, 0.5);
-  border: none !important;
+  background: none;
+  border: 2px solid var(--color-5);
   border-collapse: separate;
-  border-radius: 1px;
+  border-radius: 10px;
+}
+
+.table .top, .table th {
+  background-color: #1a9fa6;
+  color: var(--color-4) !important;
+  padding: 8px 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* HEADERS COLOR (King Name + Title, "There are _ lions with mutations in _'s pride.") */
@@ -270,16 +322,27 @@ td.bottom a {
 /* Color behind "Level, Stats, Branch, Territory" etc. */
 
 .inner-table .left {
-  background: rgba(155, 226, 242, 0.6) !important;
-  color: #2e2a2b;
-  border-radius: 1px;
+  background: rgb(68 46 30 / 50%) !important;
+  color: var(--color-2);
+  border-radius: 5px !important;
 }
 
 /* Color behind the number of all of the things above */
 
 .inner-table .right {
-  background: none;
   border-radius: 1px !important;
+  color: var(--color-5);
+  background: none;
+}
+
+.inner-table {
+  border-spacing: 0px 3px;
+  border-collapse: separate;
+  background-image: url(https://static.lioden.com/images/dynamic/backgrounds/sunsetdesertie.png);
+}
+
+.inner-table a {
+  color: var(--color-5) !important;
 }
 
 td.right {
@@ -289,6 +352,22 @@ td.right {
 /* IGNORE */
 .right_odd {
   background: none !important;
+}
+
+.member-online {
+  background: #8db644;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+}
+
+.member-offline {
+  background: #c5503d;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
 }
 
 /* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", "View Pride Overview", and cave/mound names */
@@ -504,14 +583,14 @@ a:hover {
 /* BACKGROUND */
 
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: var(--color-5) !important;
 }
 
 /* "THUMB" */
 
 ::-webkit-scrollbar-thumb {
-  background: #000000;
-  border-radius: 1px;
+  background: var(--color-3) !important;
+  border-radius: 5px;
 }
 
 /* LION AND USER AVATAR OPACITY */
@@ -524,36 +603,48 @@ table#player img {
   opacity: 1;
 }
 
-/* CIRCULAR LION AND USER AVATAR */
+/* LION AND USER AVATAR */
 
 div#lion_image {
-  border-radius: 50% !important;
+  border-radius: 10px !important;
+  border: double 5px var(--color-4);
   overflow: hidden;
-  margin-top: 15px; /* May need adjusting */
-  margin-left: 12px; /* May need adjusting */
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 table#player img {
-  border-radius: 50% !important;
+  border-radius: 10px !important;
   overflow: hidden;
 }
 
 /* LIODEN LOGO REPLACER */
 
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-  content: url("https://www.lioden.com/images/items/Other/app_foresh_khnum.png");
+  content: url("https://static.lioden.com/images/items/Other/coffeebeans.png");
   width: 120px;
   height: auto;
 }
 
 /* CAVE / MOUND IMAGES */
 
+.cave-grid, .mound-grid
+{
+  background: var(--color-3);
+  border: none !important;
+  border-radius: 10px !important;
+}
+
 div.cave-grid>img /* Pregnant Lionesses */ {
-  content: url("https://static.lioden.com/images/beetles/man-of-war/female/left/skyrmion.png") !important;
+  content: url("https://static.lioden.com/images/dynamic/backgrounds/zaxheavenlyskies.png") !important;
+}
+
+a[href$="nesting.php"]> div.cave-grid>img {
+  content: url("https://static.lioden.com/images/dynamic/backgrounds/zaxheavenlyskies.png") !important;
 }
 
 a[href$="CAVE ID"] > div.cave-grid > img {
-  content: url("https://static.lioden.com/images/beetles/man-of-war/female/left/neutron.png") !important;
+  content: url("https://static.lioden.com/images/dynamic/backgrounds/arabiandesert.png") !important;
 }
 
 a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img /* Pride Overview */ {
@@ -565,7 +656,7 @@ a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img /* Unsorted */ {
 }
 
 .mound-grid img /* Mound(s) */ {
-  background: url("https://static.lioden.com/images/items/Beetles/beetlemanofwarvoidcore.png");
+  background: url("https://static.lioden.com/images/dynamic/backgrounds/nightembers.png");
   width: 0;
   height: 0;
   padding-top: 80px;

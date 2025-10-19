@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kavivanar&display=swap');
+:root {
+  --title-font: "Bungee Spice", sans-serif;
+  --main-font: "Kavivanar", sans-serif;
+  --color-1: #642E33;
+  --color-2: #FBF0DE; 
+  --color-3: #B3471C;
+  --color-4: #F4A864;
+  --color-5: #4A0A09;
+}
 
 /* BACKGROUND */
 
 body {
-  background: url("https://i.ibb.co/cKcF0rQQ/fog-7134416.jpg") center center fixed;
+  background: url("https://cdn.pixabay.com/photo/2010/11/26/canyon-203_1280.jpg") center center fixed;
   background-size: 100%;
-  font-family: "Amatic SC", sans-serif;
-  color: #f4d4d8;
+  font: var(--main-font);
+  color: var(--color-1);
 }
 
 /* MAIN PANEL */
@@ -527,7 +536,7 @@ table#player img {
 /* LIODEN LOGO REPLACER */
 
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-  content: url('https://www.lioden.com/images/items/Other/app_foresh_khnum.png');
+  content: url("https://www.lioden.com/images/items/Other/app_foresh_khnum.png");
   width: 120px;
   height: auto;
 }

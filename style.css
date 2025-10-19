@@ -12,7 +12,7 @@
 /* BACKGROUND */
 
 body {
-  background: url("https://cdn.pixabay.com/photo/2010/11/26/canyon-203_1280.jpg") center center fixed;
+  background: url(https://static.lioden.com/images/dynamic/backgrounds/sandstorm2.png) center center fixed;
   background-size: 100%;
   font: var(--main-font);
   color: var(--color-1);
@@ -37,12 +37,12 @@ body {
 /* TOPBAR ("Welcome back, ___") */
 
 .topbar {
-  background: rgb(6 59 53);
-  border: dashed darkcyan;
-  color: #acc4b7;
+  background: var(--color-5);
+  border: double var(--color-1);
+  color: var(--color-3);
   border-radius: 8px;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /* NAVBAR (Den/Crossroads/Etc.) */
@@ -369,7 +369,7 @@ div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
 
 a:link,
 a:visited {
-  color: #ffffff !important;
+  color: var(--color-4) !important;
 }
 
 /* LINK HOVER COLOR */

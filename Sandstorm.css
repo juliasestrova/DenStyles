@@ -636,7 +636,7 @@ div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
 }
 
 div.cave-grid>img /* Pregnant Lionesses */ {
-  content: url("https://static.lioden.com/images/dynamic/backgrounds/zaxheavenlyskies.png") !important;
+  content: url("https://static.lioden.com/images/dynamic/backgrounds/zaxheavenlyskies.png");
 }
 
 a[href$="nesting.php"]> div.cave-grid>img {

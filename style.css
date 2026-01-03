@@ -1,316 +1,51 @@
 :root {
-  --color-1: rgb(226, 188, 173);
-  --color-2: rgb(92, 122, 158);
-  --color-3: rgb(124, 174, 205);
-  --color-4: rgb(186, 195, 216);
-  --color-5: rgb(48, 98, 137);
-  --color-6: rgba(48, 98, 137, 0.4);
-  --color-7: rgb(226, 188, 173, 0.4);
+  --color-1: #1d0912;
+  --color-2: #47455d;
+  --color-3: #6a5870;
+  --color-4: #9b6c7c;
+  --color-5: #c6726f;
+  --color-6: #e6b6b2;
+  --color-7: white;
 }
 
-.topbar {
-  background: var(--color-5) !important;
-  color: var(--color-1) !important;
-  padding: 8px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-  font-weight: 900;
-}
-
-.topbar a:link,
-.topbar a:visited,
-.topbar a:active {
-  color: var(--color-4) !important;
-  text-decoration: none;
-}
-
-a:link,
-a:visited,
-a:active {
-  color: var(--color-4) !important;
-  text-decoration: none;
-  font-weight: bold;
-}
-a {
-  color: var(--color-3) !important;
-  text-decoration: none;
-}
-
-.main {
-  background: rgb(48, 98, 137) !important;
-  background: var(--color-6) !important;
-  margin-top: 40px;
-  border: 5px solid rgba(48, 98, 137, 0.5) !important;
-  box-shadow: 0px 0px 2px rgb(16, 58, 78) !important;
-  border-radius: 10px !important;
-}
-
-.navbar {
-  margin-bottom: 10px;
-  border: 0;
-  border-radius: 0;
-  background: var(--color-5) !important;
-  text-transform: uppercase;
-}
-
-.navbar-brand {
+/*blocks*/
+.container-block-main {
   position: relative;
-  margin-left: -40px;
-  margin-top: -53px;
-  margin-bottom: 50px;
-  z-index: 100;
-  filter: sepia(0.2%) hue-rotate(186deg) saturate(1) brightness(85%) !important;
-}
-
-.breadcrumb {
-  background: var(--color-2) !important;
-  font-size: 13px;
-}
-
-.select-control, a.button, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
-    background: rgb(100 78 16 / 40%) !important;
-    color: var(--color-4) !important;
-    border: 1px solid var(--color-6) !important;
-    text-shadow: 0px 0px 0px white !important;
-    font-weight: 400;
-    font-size: 13px;
-    padding: 3px 6px;
-    margin: 2px 0;
-    border-radius: 3px;
-    filter: none !important;
-}
-
-
-.floatleft {
-  float: left;
-  filter: sepia(5%) hue-rotate(150deg) saturate(0.8) brightness(85%) !important;
-}
-
-.floatright {
-  float: right;
-  filter: sepia(5%) hue-rotate(150deg) saturate(0.8) brightness(85%) !important;
-}
-
-.center {
-  text-align: center;
-  color: var(--color-4) !important;
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: rgb(185, 194, 216) !important;
-}
-
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small,
-h1 .small,
-h2 .small,
-h3 .small,
-h4 .small,
-h5 .small,
-h6 .small,
-.h1 .small,
-.h2 .small,
-.h3 .small,
-.h4 .small,
-.h5 .small,
-.h6 .small {
-  font-weight: 400;
-  line-height: 1;
-  color: var(--color-3) !important;
-}
-
-/*lion background*/
-.lion-image-block img[data-layer="background"] {
-  content: url(https://static.lioden.com/images/dynamic/backgrounds/Snowy_Simien_Mountains.png) !important;
-}
-
-p.center.b {
-  background: var(--color-5) !important;
-}
-
-.table {
-  border: 2px solid var(--color-5) !important;
-}
-
-tr {
-  background-color: var(--color-5) !important;
-  color: var(--color-1) !important;
-}
-th {
-  background-color: var(--color-5) !important;
-}
-td.left.b {
-  background-color: rgb(124, 174, 205) !important;
-  color: white;
-}
-.table .right_odd {
-  background: rgba(48, 98, 137, 0.4) !important;
-}
-
-.table .bottom {
-  text-align: center;
-  background: rgba(48, 98, 137, 0.4) !important;
-  color: white !important;
-}
-
-.table .top,
-.table th {
-  background-color: rgba(48, 98, 137, 0.4) !important;
-  color: white !important;
-  padding: 8px 15px;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.panel {
-  margin-bottom: 20px;
-  background-color: rgb(92, 121, 157) !important;
-  border: 1px solid rgba(48, 98, 137, 0.4) !important;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(48, 98, 137, 0.4) !important;
-  box-shadow: 0 1px 1px rgba(48, 98, 137, 0.4) !important;
-}
-
-.panel-body.small {
-  color: white !important;
-}
-
-.progress {
-  height: 20px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  background-color: rgb(185, 194, 216) !important;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.progress div {
   width: 100%;
-  position: absolute;
-  text-align: center;
-  color: white !important;
-  margin: 0;
-  padding: 0;
-  font-size: 11px;
+  height: 800px;
 }
 
-.progress-bar {
-  background: rgb(124, 174, 205) !important;
-}
-
-.s-chat-sidebar #label_currentChannel {
-  background: rgba(48, 98, 137, 0.4) !important;
-  border: 1px solid rgb(204, 204, 204) !important;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  min-width: 140px;
-  padding: 4px 12px;
-  color: white !important;
-}
-
-#btnChatSettings {
-  background: url(//static.lioden.com/images/layout/chat/ico-settings.png)
-    no-repeat !important;
-  background-size: contain;
-  border: 0;
-  cursor: pointer;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  filter: brightness(0) invert(1) !important;
-}
-
-#btnLoadNewMessages {
-  background: url(//static.lioden.com/images/layout/chat/ico-refresh.png) 0 0 /
-    contain no-repeat !important;
-  border: 0;
-  cursor: pointer;
-  float: right;
-  height: 24px;
-  margin-top: 3px;
-  width: 24px;
-  filter: brightness(0) invert(1) !important;
-}
-
-div#chatMessagePinned {
-  background-color: rgb(48, 98, 137) !important;
-  color: rgb(124, 174, 205) !important;
-}
-
-.s-chat-message:nth-child(odd) {
-  background: rgb(92, 122, 158) !important;
-  color: rgb(124, 174, 205) !important;
-}
-
-.s-chat-message_claim {
-  background: rgb(48, 98, 137) !important;
-  border-bottom: 1px solid #555 !important;
-  color: rgb(226, 188, 173) !important;
-}
-
-.s-chat-sidebar .s-chat-message_timestamp {
-  right: auto;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 2px;
-  color: white !important;
-}
-.s-chat-message_menu {
-  background: url(//static.lioden.com/images/layout/chat/ico-menu.png) no-repeat !important;
-  background-position: bottom;
-  background-size: contain;
-  border: 0;
-  bottom: 4px;
-  cursor: pointer;
+.block-main {
   display: block;
-  height: 16px;
+  overflow: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--color-5);
+  color: white;
+  border: 2px solid var(--color-3);
+}
+
+.block1-info {
   position: absolute;
-  right: 8px;
-  width: 18px;
-  filter: brightness(0) invert(1) !important;
+  left: 2%;
+  top: 2%;
+  bottom: 2%;
+  width: 38%;
+  height: 96%;
 }
 
-.s-chat-message:nth-child(even) {
-  background: rgba(48, 98, 137, 0.4) !important;
-  color: #7caecd !important;
+.block2-info {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  width: 56%;
+  height: 48%;
 }
 
-body {
-  font-family: "OpenSans", Helvetica, Tahoma, Arial, sans-serif;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  font-size: 14px;
-  background-image: linear-gradient(
-      rgb(226, 188, 173, 0.4),
-      rgba(48, 98, 137, 0.4)
-    ),
-    url(https://cdn.pixabay.com/photo/2018/01/26/09/54/winter-3108234_1280.jpg) !important;
-}
-
-.col-md-9 {
-  background: none !important;
-  min-height: 800px;
-  padding-top: 25px;
+.block3-info {
+  position: absolute;
+  right: 2%;
+  top: 52%;
+  bottom: 2%;
+  width: 56%;
 }

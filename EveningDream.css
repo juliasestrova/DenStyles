@@ -1,0 +1,379 @@
+:root {
+  --color-1: #1d0912;
+  --color-2: #47455d;
+  --color-3: #6a5870;
+  --color-4: #9b6c7c;
+  --color-5: #c6726f;
+  --color-6: #e6b6b2;
+  --color-7: white;
+}
+
+body {
+  text-wrap: stable;
+  background: url(https://cdn.pixabay.com/photo/2021/03/30/12/47/clouds-6136881_1280.jpg)
+    fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/*topbar (money, wiki and others)*/
+.topbar {
+  background: var(--color-2);
+  color: var(--color-6);
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid var(--color-6);
+  margin-top: 0.2%;
+}
+
+/*user name/link*/
+.welcomeback a font {
+  color: var(--color-7);
+}
+
+/*messages,money, modbox, wiki, logout*/
+.toplinks li a {
+  color: var(--color-6) !important;
+}
+
+/*Currency*/
+img.icon {
+  filter: drop-shadow(2px 4px 6px var(--color-5));
+}
+
+/*Main container*/
+/*Header main container*/
+.main {
+  /* background: #FCF8E3; */
+  background: none;
+  margin-top: 60px;
+  border: 0px solid beige;
+  box-shadow: none;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: rgba(155, 108, 124, 0.4);
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--color-3);
+  text-transform: uppercase;
+}
+
+/*Logo*/
+a.navbar-brand.visible-lg.visible-md img {
+  filter: brightness(105%) saturate(70%) sepia(30%) hue-rotate(320deg)
+    drop-shadow(2px 4px 6px var(--color-6));
+}
+
+/*linkbar*/
+.nav li a font {
+  color: var(--color-6);
+}
+.nav li a:hover {
+  background: none !important;
+  filter: drop-shadow(2px 4px 6px var(--color-5));
+}
+
+/*cave main info*/
+.col-md-9 {
+  background: none;
+  padding-top: 25px;
+}
+
+.breadcrumb {
+  background: var(--color-6);
+  font-size: 13px;
+}
+
+.breadcrumb li a font {
+  color: var(--color-5);
+}
+
+/*bookmark button*/
+input.floatright {
+  background: var(--color-3);
+  color: var(--color-5);
+  text-shadow: none;
+}
+
+.floatleft a img {
+  filter: brightness(105%) saturate(70%) sepia(30%) hue-rotate(273deg);
+}
+
+.floatright a img {
+  filter: brightness(105%) saturate(70%) sepia(30%) hue-rotate(273deg);
+}
+
+.center font {
+  color: var(--color-6);
+}
+
+/*lion image*/
+.featured-lion {
+  background-color: var(--color-3);
+  color: #fff;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 640px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.lion-image-block img:nth-child(1) {
+  content: url(https://static.lioden.com/images/dynamic/backgrounds/solitude_02.png);
+}
+
+/*lions list*/
+.table {
+  border: 5px solid var(--color-4);
+  background: var(--color-3);
+  color: var(--color-6);
+}
+
+table tr th {
+  background: var(--color-2) !important;
+  color: var(--color-4) !important;
+}
+
+table tr th a {
+  color: var(--color-6) !important;
+}
+
+.table .left {
+  background: var(--color-2);
+  border-radius: 0;
+}
+
+td.right_odd a font {
+  color: var(--color-6);
+}
+
+td.right a font {
+  color: var(--color-6);
+}
+
+.table .right_odd {
+  background: none !important;
+}
+
+.table .bottom {
+  text-align: center;
+  background: var(--color-2);
+  color: #fff;
+}
+
+.table button.button {
+  background: var(--color-4);
+  color: var(--color-1);
+  text-shadow: none;
+}
+
+td.right_odd a:hover {
+  filter: drop-shadow(2px 4px 6px var(--color-6));
+}
+
+td.right a:hover {
+  filter: drop-shadow(2px 4px 6px var(--color-6));
+}
+
+/*cave statistic*/
+.table .top,
+.table th {
+  background-color: var(--color-1);
+  color: var(--color-7);
+  padding: 8px 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*cave setting*/
+input[type="text"] {
+  color: var(--color-2);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+textarea {
+  color: var(--color-2);
+  font-size: 16px;
+}
+
+/*sidebar*/
+.col-md-3 .panel {
+  border: 1px solid var(--color-2);
+  background: var(--color-3);
+  box-shadow: none;
+  color: var(--color-6);
+}
+
+.panel a:hover {
+  filter: drop-shadow(2px 4px 6px var(--color-6));
+}
+
+.panel a font {
+  color: var(--color-5);
+}
+
+.sidebar h3 {
+  color: var(--color-1);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+/*progres*/
+.progress {
+  background: var(--color-4);
+}
+
+.progress-bar {
+  background: var(--color-2);
+}
+
+.progress div {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: var(--color-6);
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+
+/*chat*/
+
+input#btnToggleSidebarChat {
+  background: var(--color-3);
+  color: var(--color-5);
+  text-shadow: none;
+}
+
+/*not use main style root*/
+.s-chat-sidebar #label_currentChannel {
+  background: #9b6c7c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  min-width: 140px;
+  padding: 4px 12px;
+  color: #e6b6b2;
+}
+
+#chatMessageContainer {
+  border-radius: 6px;
+  border: 1px solid #9b6c7c;
+  overflow: hidden;
+  position: relative;
+}
+
+input#btnChatSend {
+  color: #9b6c7c;
+  text-shadow: none;
+  background: #e6b6b2;
+  border: #9b6c7c;
+}
+
+a.btn.btn-default.button {
+  color: #9b6c7c;
+  text-shadow: none;
+  background: #e6b6b2;
+  border: #9b6c7c;
+}
+
+div#chatMessagePinned span {
+  color: #9b6c7c;
+  background: #e6b6b2;
+  border: none;
+}
+
+#chatMessagePinned.s-chat-message__pinned {
+  background: #9b6c7c url(//static.lioden.com/images/layout/sticky.png)
+    no-repeat 10px 6px;
+  border-bottom-color: #9b6c7c !important;
+  color: #9b6c7c;
+  font-weight: bold;
+}
+div#chatMessageContainer a {
+  color: #c6726f;
+}
+.s-chat-message {
+  border-bottom: 1px solid #9b6c7c;
+  border-top: 1px solid #9b6c7c;
+  border-left: 2px solid #9b6c7c;
+  border-right: 2px solid #9b6c7c;
+  padding: 4px 6px;
+  position: relative;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background: #e6b6b2 !important;
+  color: #6a5870;
+}
+.s-chat-message_claim {
+  background: #47455d;
+  border-bottom: 1px solid #c6726f;
+  color: #e6b6b2;
+}
+
+/*blocks*/
+.container-block-main {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.block-main {
+  display: block;
+  overflow: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: var(--color-3);
+  color: var(--color-6);
+  border: 5px solid var(--color-4);
+  border-radius: 10px;
+  text-align: center;
+  scrollbar-color: var(--color-4) var(--color-2);
+}
+
+.block1-info {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  bottom: 2%;
+  width: 38%;
+  height: 96%;
+}
+
+.block2-info {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  width: 56%;
+  height: 48%;
+}
+
+.block3-info {
+  position: absolute;
+  right: 2%;
+  top: 52%;
+  bottom: 2%;
+  width: 56%;
+}
+
+/*credits*/
+.breadcrumb::after {
+  content: "CSS от Polaris Penumbra (#419566)";
+  position: absolute;
+  right: 20%;
+  z-index: 100;
+  color: var(--color-1);
+}
